@@ -17,9 +17,30 @@ let username2 = "";
 
 
 do {
-   username2 = window.prompt("Your username cnt be  empty")
+   username2 = window.prompt("Your username cant be  empty")
 
 } while (username2 == "")
    
 
-   
+
+let loggedIn = false;
+let username3;
+let password;   
+
+
+
+while (!loggedIn) {
+   username3 = window.prompt("What's your your username3")
+   password = window.prompt("Whats your password")
+    
+   if (username3 === "username" && password === "password") {
+      loggedIn = true;
+      console.log("You are logged in")
+   }
+   else {
+      console.log("Incorrect credentials")
+   }
+      
+}
+
+
