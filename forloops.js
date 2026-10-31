@@ -32,3 +32,36 @@ for (k = 1; k <= 20; k+=5) {
 }
 
 
+//Print the first 5 natural numbers
+
+
+for (i = 1; i <= 5; i++){
+    console.log(i)
+}
+
+//print first 10 even numbers;
+
+
+for (i = 0; i <= 40; i++){
+    if (i % 2 === 0) {
+        console.log(i)
+    }
+    
+}
+
+
+
+let count = 10;
+
+
+for (i = 0; count < 20; i++){
+    if (i % 2 === 0) {
+        console.log(i)
+    }
+    count++
+}
+
+
+
+
+
