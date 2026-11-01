@@ -8,17 +8,22 @@ let convertedResult;
 
 
 submit.onclick = function () {
+    let temperature = Number(input.value);
+
+    if (input.value.trim() === "" || !Number.isFinite(temperature)) {
+        result.textContent = "Please enter a valid temperature.";
+        return;
+    }
+
     if (cTF.checked) {
-        convertedResult = (input.value * 9 / 5) + 32
-        result.textContent = `The converted input when converted into fahreneit is ${convertedResult}`
+        convertedResult = (temperature * 9 / 5) + 32;
+        result.textContent = `${temperature}°C = ${convertedResult}°F`;
     }
     else if (fTC.checked) {
-        convertedResult = (input.value - 32) * 5 / 9
-        result.textContent = `The converted input when converted into fahreneit is ${convertedResult}`
-        
+        convertedResult = (temperature - 32) * 5 / 9;
+        result.textContent = `${temperature}°F = ${convertedResult}°C`;
     }
     else {
-          result.textContent = `You havent selected anything`
+        result.textContent = "Please select a conversion direction.";
     }
-}
-
+};
