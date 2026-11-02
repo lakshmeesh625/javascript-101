@@ -15,6 +15,9 @@ function generateRandomPassword(length) {
 
 
 console.log(generateRandomPassword(12));
+console.log(generateRandomPassword(16));
+
+
 
 
 
