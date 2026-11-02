@@ -19,3 +19,7 @@ let allFoods = [...vegetables, ...fruits, "milk", "cheese"];
 
 console.log(allFoods);
 
+
+
+
+
