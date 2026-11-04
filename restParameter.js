@@ -26,3 +26,20 @@ function multiply(multiplier, ...numbers) {
 console.log(multiply(2, 3, 4, 5));
 
 
+
+
+function fruits(...fruits) { 
+    console.log(fruits);
+}
+
+
+
+fruits("apple", "banana", "orange", "grape");
+
+
+
+
+
+
+
+

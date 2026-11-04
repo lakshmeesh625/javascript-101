@@ -19,5 +19,9 @@ console.log(generateRandomPassword(16));
 
 
 
+let randomIndex = Math.floor(Math.random() * allCharacters.length)
+console.log(randomIndex)
+
+console.log("abcdefghijkl"[12])
 
 
